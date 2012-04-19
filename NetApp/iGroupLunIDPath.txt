@@ -1,0 +1,14 @@
+PS C:\Temp\DataONTAP\DataONTAP> Get-NaIgroup | ForEach-Object {$_.Initiators} | Get-NaLunMapByInitiator | sort ascending | FL InitiatorGroup,LunID,Path
+
+
+InitiatorGroup : igrptst2
+LunId          : 1
+Path           : /vol/vol1/tstqtree/tstqtree2
+
+InitiatorGroup : igrptst
+LunId          : 1
+Path           : /vol/vol1/tstqtree/tstqtree
+
+InitiatorGroup : igrptst
+LunId          : 0
+Path           : /vol/vol1/test/testlun

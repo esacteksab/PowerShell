@@ -1,0 +1,1 @@
+Import-Csv manager.csv | foreach { Set-QADUser $_.user -Manager $_.manager }

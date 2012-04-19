@@ -1,0 +1,1 @@
+﻿Where-Object {$_.EventID -eq $evtIDs[0] -OR $_.EventID -eq $evtIDs[1] }

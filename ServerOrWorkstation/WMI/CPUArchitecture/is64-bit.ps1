@@ -1,0 +1,1 @@
+﻿Get-WmiObject -query "select * from win32_processor where datawidth='64'"

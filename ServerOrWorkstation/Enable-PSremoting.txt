@@ -1,0 +1,9 @@
+Enter-PSSession -computername Server-R2
+
+Will connect you to the server named Server-R2. That Enable-PSRemoting should have configured and started the Windows Remote Management (WinRM) service, as well as put the appropriate exception into the Windows Firewall, if you have it enabled. Provided you and the server are in the same (or trusting) domains, and that you ran PowerShell as a Domain Admin, you should be good to go. PowerShell's prompt will even change to let you know you're on a remote machine:
+
+[SERVER-R2] PS C:\>
+
+Run whatever commands you like. You can import modules located on that server (like Import-Module ActiveDirectory) and use commands from those modules. When you're done, run:
+
+Exit-PSSession

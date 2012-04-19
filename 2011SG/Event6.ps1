@@ -1,0 +1,1 @@
+﻿Select-String -path $env:SystemRoot/WindowsUpdate.log -pattern "fatal"
